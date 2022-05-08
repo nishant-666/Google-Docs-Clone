@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+.docs-main {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.add-docs {
+    height: 40px;
+    width: 200px;
+    background-color: #ffc107;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.add-input {
+    width: 95%;
+    height: 40px;
+    outline: none;
+    border: 1px solid #676767;
+    border-radius: 0px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.button-container {
+    text-align: center;
+    margin: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.grid-main {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    color: whitesmoke;
+    margin-top: 20px;
+    gap: 20px;
+    justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grid-child {
+    padding: 20px;
+    background-color: rgb(98, 98, 98);
+    width: 300px;
+    cursor: pointer;
+}
+
+.editDocs-main {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.editDocs-inner {
+    width: 800px;
+    box-shadow: 0px -2px 5px 2px rgba(181, 181, 181, 0.75);
+    -webkit-box-shadow: 0px -2px 5px 2px rgba(181, 181, 181, 0.75);
+    -moz-box-shadow: 0px -2px 5px 2px rgba(181, 181, 181, 0.75);
+    padding: 20px;
+    height: 750px;
+}
+
+.ql-container.ql-snow {
+    border: none !important;
 }
